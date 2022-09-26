@@ -1,0 +1,59 @@
+.learn
+    @include flex-shell
+
+    &__heading
+        @include heading
+        margin-bottom: 116px
+
+        &::after
+            @include after-heading
+
+    &__container
+        margin: 136px 0 140px
+
+    &__main
+        display: flex
+        justify-content: space-between
+
+    &__list
+        width: 636px
+        height: 574px
+        margin-top: 30px
+
+    &__item
+        width: 303px
+        height: 272px
+        background: $CBAEnhance
+        padding: 30px
+
+        &:nth-child(3) > .learn__text
+            width: 216px
+
+        &:last-child > .learn__text
+            width: 223px
+
+    &__number
+        @include marker($wh: $WHBMarker, $mt: 0, $mr: 0)
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__count
+        @include font-cardo($fs: $FSCLearn, $lh: 30)
+
+    &__text
+        @include font-cardo
+        margin-top: 30px
+
+    &__position
+        @include position-border($h: $HBWoman, $w: $WBWoman)
+
+    &__img
+        @include position-img($h: $HIWoman, $w: $WIWoman, $lt: $LTPWoman, $bw: $BWWoman, $bh: $BHWoman, $link: $LWoman)
+
+.grid
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: space-between

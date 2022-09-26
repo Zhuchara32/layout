@@ -1,0 +1,34 @@
+.copy-book
+    @include flex-shell($bg: $CHead)
+
+    &__container
+        margin: 70px
+        display: flex
+
+    &__img
+        height: 394px
+        width: 560px
+        background: url(/assets/img/copy-book.png) no-repeat
+        background-position: center center
+        background-size: cover
+
+    &__content
+        width: 539px
+        margin-right: 201px
+
+    &__heading
+        @include heading($ta: left, $fs: $FSHeadBig, $lh: $LHHeadBig, $color: $CHeadBig)
+        margin: 71px 0 55px
+
+        &::after
+            @include after-heading($left: 0, $top: $MTLine + $LHHead + 4px)
+
+    &__text
+        @include font-inter($ct: $CTGrey)
+        margin-bottom: 27px
+
+    &__btn
+        height: 66px
+        width: 220px
+        background: $CHead
+        color: $CTUpdates

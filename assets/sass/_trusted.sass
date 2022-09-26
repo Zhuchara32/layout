@@ -1,0 +1,79 @@
+.trusted
+	@include flex-shell
+
+	&__container
+		margin: 126px auto
+
+	&__heading
+		@include heading
+
+		&::after
+			@include after-heading
+
+	&__list
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		margin-top: 76px
+
+	&__item
+		width: 313px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		&:first-child
+
+			& > .trusted__img
+				background: url(/assets/img/trusted-amazen.png) no-repeat
+				background-position: center center
+				background-size: cover
+
+			& > .trusted__text
+				width: 297px
+
+			& > .trusted__title
+				margin: 19px auto 20px
+
+		&:nth-child(2)
+
+			& > .trusted__img
+				background: url(/assets/img/trusted-megan.png) no-repeat
+				background-position: center center
+				background-size: cover
+
+			& > .trusted__text
+				width: 267px
+
+		&:nth-child(3)
+
+			& > .trusted__img
+				background: url(/assets/img/trusted-megank.png) no-repeat
+				background-position: center center
+				background-size: cover
+
+			& > .trusted__text
+				width: 280px
+
+		&:last-child
+
+			& > .trusted__img
+				background: url(/assets/img/trusted-urban.png) no-repeat
+				background-position: center center
+				background-size: cover
+
+			& > .trusted__text
+				width: 304px
+
+	&__img
+		width: 189px
+		height: 100px
+
+	&__title
+		@include font-cardo($lh: $LHTReaders)
+		text-align: center
+		margin: 23px auto 21px
+
+	&__text
+		@include font-inter
+		text-align: center

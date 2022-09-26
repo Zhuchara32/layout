@@ -1,0 +1,75 @@
+@mixin heading($ta: center, $fs: $FSHead, $lh: $LHHead, $color: $CHead)
+    font-family: 'Cardo'
+    font-style: normal
+    font-weight: $FW
+    font-size: $fs
+    line-height: $lh
+    text-transform: capitalize
+    color: $color
+    position: relative
+    text-align: $ta
+
+@mixin after-heading($left: calc(50% - 50px / 2), $top: $MTLine + $LHHead, $bg: $CMarcLine)
+    content: ''
+    display: inline-block
+    width: $WLine
+    height: $HLine
+    background: $bg
+    position: absolute
+    top: $top
+    left: $left
+
+@mixin marker($wh: $WHSMarker, $mt: $MTSMarker, $mr: $MRSMarker)
+    background: $CMarcLine
+    border-radius: $BRMarker
+    width: $wh
+    height: $wh
+    margin-top: $mt
+    margin-right: $mr
+
+@mixin half-marker($wh: $WHLMarker)
+    border-radius: $BRMarker
+    width: $wh
+    height: $wh
+    border: 1px solid $CMarcLine
+    background: linear-gradient(45deg, $CMarcLine, $CMarcLine 100%)
+    background-size: 50% 100%
+    background-repeat: no-repeat
+
+@mixin position-border($h: $HBMan, $w: $WBMan)
+    border: 10px solid $CMarcLine
+    height: $h
+    width: $w
+    position: relative
+
+@mixin position-img($h: $HIMan, $w: $WIMan, $lt: $LTPMan, $bw: $BWMan, $bh: $BHMan, $link: $LMan)
+    height: $h
+    width: $w
+    background: url($link) no-repeat
+    background-position: center center
+    background-size: $bw $bh
+    position: absolute
+    left: $lt
+    top: $lt
+
+@mixin flex-shell($bg: $CBGBasic)
+    background: $bg
+    height: 100%
+    display: flex
+    justify-content: center
+
+@mixin font-inter($fs: $FSStandart, $lh: $LHStandart, $ct: $CTStandart)
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: $FW
+    font-size: $fs
+    line-height: $lh
+    color: $ct
+
+@mixin font-cardo($fs: $FSSCardo, $lh: $LHTAbout, $ct: $CHead)
+    font-family: 'Cardo'
+    font-style: normal
+    font-weight: 400
+    font-size: $fs
+    line-height: $lh
+    color: $ct

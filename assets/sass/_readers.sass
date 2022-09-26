@@ -1,0 +1,131 @@
+.readers
+    @include flex-shell
+
+    &__container
+        margin: 110px auto 150px
+        display: flex
+
+    &__heading
+        @include heading($ta: left)
+        margin: 121px auto 60px
+
+        &::after
+            @include after-heading($left: 0, $top: $MTLine + (2 * $LHHead))
+
+    &__left-section
+        width: 435px
+        margin-right: 63px
+
+.left-section
+    &__content
+        @include font-inter($lh: $LHTAbout)
+
+    &__grade
+        display: flex
+        align-items: center
+        margin: 23px auto 10px
+
+    &__grade-list
+        width: 120px
+
+        & > .grade-list__item:not(:last-child)
+            @include marker($wh: $WHMMarker, $mt: 0, $mr: 0)
+
+        & > .grade-list__item:last-child
+            @include half-marker($wh: $WHMMarker)
+
+    &__total
+        @include font-cardo($fs: $FSTReaders, $lh: $LHLink)
+        margin-left: 9px
+
+    &__caption
+        @include font-inter($fs: $FSText, $ct: $CHead)
+
+.right-section
+    list-style-type: none
+    width: 782px
+    height: 644px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-content: space-between
+
+    &__item
+        height: 294px
+        width: 381px
+        background: $CHead
+        padding-left: 35px
+        padding-top: 30px
+
+    &__head
+        display: flex
+        margin-bottom: 20px
+
+    &__info
+        margin: 11px 0 0 20px
+
+    &__img
+        width: 85px
+        height: 85px
+
+    &__name
+        @include font-cardo($lh: $LHTReaders, $ct: $CTUpdates)
+        margin-bottom: 15px
+
+    &__grade-list
+        width: 76.03px
+
+        & > .grade-list__item:not(:last-child)
+            @include marker($wh: $WHLMarker, $mt: 0, $mr: 0)
+
+        & > .grade-list__item:last-child
+            @include half-marker
+
+    &__quote
+        @include font-cardo($fs: $FSTReaders, $lh: $LHPrice, $ct: $CTUpdates)
+
+    &__text
+        @include font-inter($fs: $FSText, $lh: $LHTReaders, $ct: $CTGrey)
+        margin-top: 13px
+
+    &__item
+        &:first-child
+
+            & > .right-section__head > .right-section__img
+                background: url(/assets/img/James.png) no-repeat
+                background-position: center center
+                background-size: cover
+
+            & > .right-section__text
+                width: 290px
+
+        &:nth-child(2)
+
+            & > .right-section__head
+
+                & > .right-section__img
+                    background: url(/assets/img/Chris.png) no-repeat
+                    background-position: center center
+                    background-size: cover
+
+                & > .right-section__info > .right-section__grade-list > .grade-list__item:last-child
+                    background-size: 0% 100%
+
+            & > .right-section__text
+                width: 303px
+
+        &:last-child
+
+            & > .right-section__head > .right-section__img
+                background: url(/assets/img/Angeline.png) no-repeat
+                background-position: center center
+                background-size: cover
+
+            & > .right-section__text
+                width: 300px
+
+.grade-list
+    list-style-type: none
+    display: flex
+    justify-content: space-between

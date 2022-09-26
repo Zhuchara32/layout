@@ -1,0 +1,75 @@
+.author-book
+    @include flex-shell
+
+    &__container
+        margin: 126px auto 150px
+
+    &__list
+        display: flex
+        list-style-type: none
+        margin-top: 96px
+
+    &__item
+        display: flex
+
+        &:first-child
+            & > .author-book__img
+                background: url(/assets/img/atomic-author.png) no-repeat
+                background-position: center center
+
+            & > .author-book__content > .author-book__price
+                @include font-inter($fs: $FSPrice, $lh: $LHPrice, $ct: $CMarcLine)
+
+        &:last-child
+            & > .author-book__img
+                background: url(/assets/img/dark-author.png) no-repeat
+                background-position: center center
+
+            & > .author-book__content > .author-book__price
+                @include font-inter($fs: $FSTReaders, $lh: $LHPrice, $ct: $CMarcLine)
+
+    &__img
+        height: 382px
+        width: 285px
+        margin-left: 10px
+
+    &__content
+        margin: 38px 38px 0 30px
+        width: 287px
+
+    &__title
+        @include font-cardo($fs: $FSTABook, $lh: $LHTABook)
+        letter-spacing: 0.32px
+        text-transform: capitalize
+
+    &__price
+        margin: 8px 0 18px
+
+    &__text
+        @include font-inter
+
+    &__book
+        @include font-cardo($lh: $LHTReaders)
+
+    &__btn
+        height: 66px
+        width: 206px
+
+    &__app
+        display: flex
+        margin: 13px 0 27px
+
+    &__heading
+        @include heading
+
+        &::after
+            @include after-heading
+
+.btn-line
+    border: 2px solid $CMarcLine
+    @include font-cardo($fs: $FSStandart, $lh: $LHStandart)
+    letter-spacing: 0.38px
+    text-transform: capitalize
+
+.container
+    width: 1300px

@@ -1,0 +1,82 @@
+.enhance
+    @include flex-shell($bg: $CBAEnhance)
+
+    &__container
+        margin: 116px auto 130px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__heading
+        @include heading
+        margin-bottom: 97px
+
+        &::after
+            @include after-heading($top: $MTLine + $LHHead + 1)
+
+    &__list
+        width: 100%
+        height: 524px
+
+    &__marker
+        margin-top: 5.5px
+
+    &__item
+        height: 242px
+        width: 635px
+        background: $CTUpdates
+        padding-top: 42px
+        padding-left: 40px
+
+        &:first-child > .enhance__text
+            width: 533px
+
+        &:nth-child(2) > .enhance__text
+            width: 509px
+
+        &:nth-child(3) > .enhance__text
+            width: 530px
+
+        &:last-child > .enhance__text
+            width: 536px
+
+    &__title
+        @include font-cardo($lh: $LHTReaders)
+
+    &__text
+        @include font-inter($lh: $LHTEnhance)
+        margin-top: 22px
+        margin-bottom: 10px
+
+    &__info
+        display: flex
+
+    &__name
+        @include font-cardo($fs: $FSTReaders, $lh: $LHIUpdates)
+        margin-right: 47px
+
+    &__value
+        @include font-inter($fs: $FSLink, $lh: $LHText)
+
+    &__container-btn
+        margin-right: 7px
+
+    &__btn
+        height: 76px
+        width: 429px
+        margin: 70px auto 35px
+
+    &__description
+        @include font-inter($fs: $FSText)
+        text-align: center
+
+    &__questions
+        @include font-inter($fs: $FSText, $ct: $CHead)
+        text-align: center
+        letter-spacing: 0.19px
+
+    &__link
+        @include font-inter
+        letter-spacing: normal
+        text-decoration: none
+        text-align: center

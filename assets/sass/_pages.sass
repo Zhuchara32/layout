@@ -1,0 +1,197 @@
+.pages
+    @include flex-shell($bg: $CHead)
+
+    &__container
+        margin: 22px auto 100px
+
+    &__header
+        display: flex
+        align-items: center
+        height: 66px
+
+    &__social-list
+        width: 155px
+        margin-left: 35px
+        margin-right: 260px
+
+    &__item
+        width: $WHHItem
+        height: $WHHItem
+        background: $CTUpdates
+
+        &:first-child > .pages__link > .pages__icon
+            background: url(/assets/img/facebook-nav.png) no-repeat
+            background-position: center center
+            width: 7.52px
+            height: 14px
+
+        &:nth-child(2) > .pages__link > .pages__icon
+            background: url(/assets/img/tweeter-nav.png) no-repeat
+            background-position: center center
+            width: 13.97px
+            height: 11.35px
+
+        &:last-child > .pages__link > .pages__icon
+            background: url(/assets/img/link-nav.png) no-repeat
+            background-position: center center
+            width: 12.25px
+            height: 12.22px
+
+    &__btn
+        width: 222px
+        height: 66px
+
+    &__main
+        margin-top: 121px
+        display: flex
+
+    &__left-section
+        margin-top: 147px
+
+    &__right-section
+        width: 592px
+        height: 800px
+        background: url(/assets//img/dark-light.png) no-repeat
+        background-position: center center
+        background-size: 614px 822px
+
+.social-list
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__link
+        text-decoration: none
+
+.logo
+    &__img
+        width: 119px
+        height: 35px
+
+.navigation
+    display: flex
+    align-items: center
+
+    &__list
+        list-style-type: none
+        width: 402px
+        display: flex
+        justify-content: space-between
+
+    &__item
+        &:nth-child(3)
+            margin-right: 12px
+
+    &__link
+        text-decoration: none
+        letter-spacing: 0.17px
+        @include font-inter($fs: $FSLink, $lh: $LHLink, $ct: $CTLink)
+
+        &--active
+            letter-spacing: 0.17px
+            @include font-inter($fs: $FSLink, $lh: $LHLink, $ct: $CMarcLine)
+
+    &__cart
+        width: 17px
+        height: 17px
+        background: url(/assets/img/cart.png) no-repeat
+        background-position: center center
+        background-size: cover
+        margin-right: 51px
+        margin-left: 39px
+
+.btn-order
+    border: none
+    background: $CMarcLine
+    border: 2px solid $CMarcLine
+    font-family: 'Cardo'
+    font-style: normal
+    font-weight: 400
+    font-size: 19px
+    line-height: 28px
+    letter-spacing: 0.57px
+    text-transform: capitalize
+
+.left-section
+    margin-left: 23px
+    margin-right: 102px
+    width: 562px
+
+    &__welcome
+        @include font-cardo($fs: $FSPrice, $lh: $LHPWelcome, $ct: $CTUpdates)
+        letter-spacing: 1.2px
+        text-transform: capitalize
+        position: relative
+        margin-left: 49px
+
+        &::before
+            content: ''
+            display: inline-block
+            background: $CMarcLine
+            width: 35px
+            height: 2px
+            position: absolute
+            left: -49px
+            bottom: 50%
+
+    &__heading
+        @include font-cardo($fs: $FSHPages, $lh: $LHHPages, $ct: $CTUpdates)
+        letter-spacing: 1.3px
+        margin-top: 10px
+
+    &__subheading
+        @include font-cardo($fs: $FSSPages, $lh: $LHHPages, $ct: $CTUpdates)
+        letter-spacing: 1.3px
+        margin-bottom: 24px
+
+    &__text
+        @include font-inter($fs: $FSText)
+
+    &__link
+        @include font-cardo($fs: $FSStandart, $lh: $LHTResoarces, $ct: $CTUpdates)
+        margin-left: 48px
+        border-bottom: 1px solid $CTUpdates
+
+    &__app-btn
+        margin-top: 42px
+
+    &__info-list
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        padding-right: 37px
+
+.link
+    letter-spacing: 0.38px
+    text-transform: capitalize
+    text-decoration: none
+    padding-bottom: 4px
+
+.info-item
+    margin-top: 47px
+    display: flex
+
+    &__name
+        @include font-cardo($lh: $LHTReaders, $ct: $CTUpdates)
+        letter-spacing: 0.48px
+        margin-bottom: 12px
+
+    &__value
+        @include font-inter($fs: $FSLink, $lh: $LHText, $ct: $CTGrey)
+
+.marker
+    &-normal
+        @include marker
+
+@font-face
+    font-family: 'Inter'
+    src: url("/assets/fonts/Inter-Regular.ttf")
+
+@font-face
+    font-family: 'Cardo'
+    src: url("/assets/fonts/Cardo-Regular.ttf")

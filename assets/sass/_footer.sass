@@ -1,0 +1,139 @@
+.footer
+    @include flex-shell($bg: $CHead)
+
+    &__container
+        margin: 92px auto 24px
+
+    &__content
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        margin-bottom: 86px
+
+    &__logo
+        margin: 0 24px 17px 0
+
+    &__social-list
+        width: 255px
+        padding-right: 5px
+
+    &__social-item
+        border: 1px solid $CMarcLine
+        width: $WHFItem
+        height: $WHFItem
+
+        &:first-child > .social-list__link > .footer__icon
+            background: url(/assets/img/footer-face.png) no-repeat
+            background-position: center center
+            height: 16px
+            width: 8.59375px
+
+        &:nth-child(2) > .social-list__link > .footer__icon
+            background: url(/assets/img/footer-tw.png) no-repeat
+            background-position: center center
+            height: 12.96875px
+            width: 15.968799591064453px
+
+        &:nth-child(3) > .social-list__link > .footer__icon
+            background: url(/assets/img/footer-in.png) no-repeat
+            background-position: center center
+            height: 13.96875px
+            width: 14px
+
+        &:last-child > .social-list__link > .footer__icon
+            background: url(/assets/img/footer-inst.png) no-repeat
+            background-position: center center
+            height: 16.624996185302734px
+            width: 16.6250057220459px
+
+    &__topic
+        @include font-cardo($ct: $CTUpdates)
+        letter-spacing: 0.384px
+        margin-bottom: 24px
+
+    &__list
+        list-style-type: none
+        margin-left: 12px
+
+    &__el
+        margin-bottom: 9px
+
+    &__info
+        display: flex
+        justify-content: space-between
+        padding-top: 3px
+
+    &__name
+        letter-spacing: 0.18px
+        @include font-inter($fs: $FSText, $lh: $LHIUpdates, $ct: $CTGrey)
+
+    &__link
+        text-decoration: none
+        display: flex
+        align-items: center
+
+    &__value
+        @include font-inter($fs: $FSLink, $lh: $LHText, $ct: $CTGrey)
+        text-decoration: none
+        display: block
+
+        &:first-child
+
+            & > .footer__big-value
+                @include font-inter($fs: $FSText, $lh: $LHText, $ct: $CTGrey)
+
+        &:not(:first-child)
+            letter-spacing: 0.18px
+
+    &__contact
+        @include font-cardo($fs: $FSText, $lh: $LHText, $ct: $CTUpdates)
+        letter-spacing: 0.36px
+
+    &__not-see
+        font-size: 0
+        line-height: 27px
+
+    &__copy
+        @include font-inter($fs: $FSLink, $lh: $LHLink, $ct: $CTGrey)
+        text-align: center
+        letter-spacing: 0.17px
+
+    &__flow-first
+        @include font-inter($fs: $FSLink, $lh: $LHLink, $ct: $CTUpdates)
+        text-align: center
+        letter-spacing: 0.17px
+
+    &__flow-second
+        @include font-inter($fs: $FSRDate, $lh: $LHLink, $ct: $CTUpdates)
+        text-align: center
+        letter-spacing: 0.17px
+
+    &__grade-list
+        width: 16px
+        margin-right: 10px
+
+.grade-list
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+
+    &__item
+        @include marker($wh: $WHSLMarker, $mt: 0, $mr: 0)
+
+.footer__item
+    &:last-child
+        width: 343px
+        margin-right: 73px
+
+        & > .footer__info > .footer__values
+            width: 234px
+            height: 164px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+        & > .footer__info > .footer__contacts
+            width: 81px
+            display: flex
+            flex-direction: column
+            justify-content: space-between

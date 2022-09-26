@@ -1,0 +1,87 @@
+.about
+    @include flex-shell($bg: $CBGAbout)
+
+    &__container
+        margin: 180px auto 140px
+        display: flex
+
+    &__article
+        width: 570px
+        margin-left: 150px
+
+    &__heading
+        @include heading($ta: left)
+        margin: 16px 0 62px
+
+        &::after
+            @include after-heading($left: 0)
+
+    &__text
+        @include font-inter($lh: $LHTAbout)
+        width: 559px
+
+    &__list
+        list-style-type: none
+        display: flex
+        margin: 33px 0 54px 12px
+        width: 570px
+
+    &__item
+        border-left: 1px solid $CMarcLine
+        padding-left: 37px
+
+        &:first-child
+            border: none
+            padding-left: 0
+            margin-right: 34px
+
+        &:nth-child(2)
+            margin-right: 60px
+
+    &__number
+        @include font-cardo($fs: $FSNAbout, $lh: $LHNAbout)
+
+    &__details
+        @include font-inter($fs: $FSLink, $lh: $LHDetails)
+        text-transform: capitalize
+
+    &__info
+        height: 161px
+        width: 484px
+        background: $CHead
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__barcode
+        height: 130px
+        width: 130px
+        background: url(/assets/img/barcode.png) no-repeat
+        background-position: center center
+        background-size: cover
+
+    &__contacts
+        width: 274px
+        margin-left: 40px
+        padding-top: 12px
+
+    &__name
+        @include font-cardo($fs: $FSTReaders, $lh: $LHLink, $ct: $CMarcLine)
+        margin-bottom: 12px
+
+    &__contact
+        @include font-inter($fs: $FSText, $ct: $CTGrey)
+
+        &:last-child
+            margin-top: 6px
+
+    &__link
+        text-decoration: none
+        letter-spacing: 0.19px
+        color: $CTGrey
+
+    &__position
+        @include position-border
+
+    &__img
+        @include position-img

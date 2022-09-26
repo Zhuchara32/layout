@@ -1,0 +1,129 @@
+.resources
+    @include flex-shell($bg: $CBAEnhance)
+
+    &__container
+        margin: 126px auto 150px
+        position: relative
+
+    &__heading
+        @include heading
+        margin-bottom: 96px
+
+        &::after
+            @include after-heading
+
+    &__carousel
+        list-style-type: none
+
+.carousel
+    &__item
+        width: 420px
+        background: $CTUpdates
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07)
+        border-radius: 5px
+
+    &__first
+
+        & > .carousel__img
+            background: url(/assets/img/resource-1.png) no-repeat
+            background-position: center center
+            background-size: cover
+
+        & > .carousel__content > .carousel__topic
+            width: 318px
+
+        & > .carousel__content > .carousel__text
+            width: 359px
+
+    &__second
+
+        & > .carousel__img
+            background: url(/assets/img/resource-2.png) no-repeat
+            background-position: center center
+            background-size: cover
+
+        & > .carousel__content > .carousel__topic
+            width: 260px
+
+        & > .carousel__content > .carousel__text
+            width: 358px
+
+    &__third
+
+        & > .carousel__img
+            background: url(/assets/img/resource-3.png) no-repeat
+            background-position: center center
+            background-size: cover
+
+        & > .carousel__content > .carousel__topic
+            width: 325px
+
+        & > .carousel__content > .carousel__text
+            width: 313px
+
+    &__img
+        height: 350px
+        width: 420px
+        border-radius: 5px 5px 0px 0px
+
+    &__content
+        margin: 25px 30px 30px
+
+    &__topic
+        @include font-cardo
+        letter-spacing: 0.24px
+
+    &__text
+        @include font-inter($lh: $LHTResoarces)
+        margin: 20px 0 13px
+
+    &__details
+        display: flex
+        justify-content: space-between
+
+    &__link
+        @include font-cardo($fs: $FSStandart, $lh: $LHLResources)
+        border-bottom: 2px solid $CHead
+
+    &__date
+        @include font-inter($fs: $FSRDate, $lh: $LHLink, $ct: $CHead)
+
+.button-prev
+    @include marker($wh: $WHBMarker, $mt: 0, $mr: 0)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: calc(50% - 25px + 73px) // 25 - half marker, 73 - half excess height
+    left: -25px
+    z-index: 2
+
+    &:hover
+        cursor: pointer
+
+    &__arrow
+        width: 15px
+        height: 29px
+        background: url(/assets/img/prev.png) no-repeat
+        background-position: center center
+        background-size: 19px 33px
+
+.button-next
+    @include marker($wh: $WHBMarker, $mt: 0, $mr: 0)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: calc(50% - 25px + 73px)
+    right: -25px
+    z-index: 2
+
+    &:hover
+        cursor: pointer
+
+    &__arrow
+        width: 15px
+        height: 29px
+        background: url(/assets/img/next.png) no-repeat
+        background-position: center center
+        background-size: 19px 33px

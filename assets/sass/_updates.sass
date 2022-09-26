@@ -1,0 +1,47 @@
+.updates
+    @include flex-shell
+
+    &__container
+        margin: 119px auto
+        background: $CMarcLine
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.18)
+        border-radius: 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__heading
+        @include heading
+        margin: 96px auto 51px
+
+        &::after
+            @include after-heading($bg: $CHead)
+
+    &__text
+        @include font-inter($fs: $FSText, $ct: $CHead)
+        text-align: center
+        width: 550px
+
+    &__form
+        margin: 49px auto 115px
+
+    &__input
+        background: $CTUpdates
+        border: 1px solid $BIUpdates
+        border-radius: 0px
+        height: 70px
+        width: 656px
+        padding-left: 39px
+        letter-spacing: 0.18px
+        @include font-inter($fs: $FSText, $lh: $LHIUpdates, $ct: $CTGrey)
+
+    &__btn
+        background: $CHead
+        border: 2px solid $CHead
+        border-radius: 0px
+        height: 68px
+        width: 328px
+        text-align: center
+        letter-spacing: 0.18px
+        margin-left: 16px
+        @include font-inter($fs: $FSText, $lh: $LHIUpdates, $ct: $CTUpdates)
