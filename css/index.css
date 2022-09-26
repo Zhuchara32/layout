@@ -34,21 +34,21 @@
 }
 
 .pages__item:first-child > .pages__link > .pages__icon {
-  background: url(/assets/img/facebook-nav.png) no-repeat;
+  background: url(./assets/img/facebook-nav.png) no-repeat;
   background-position: center center;
   width: 7.52px;
   height: 14px;
 }
 
 .pages__item:nth-child(2) > .pages__link > .pages__icon {
-  background: url(/assets/img/tweeter-nav.png) no-repeat;
+  background: url(./assets/img/tweeter-nav.png) no-repeat;
   background-position: center center;
   width: 13.97px;
   height: 11.35px;
 }
 
 .pages__item:last-child > .pages__link > .pages__icon {
-  background: url(/assets/img/link-nav.png) no-repeat;
+  background: url(./assets/img/link-nav.png) no-repeat;
   background-position: center center;
   width: 12.25px;
   height: 12.22px;
@@ -71,7 +71,7 @@
 .pages__right-section {
   width: 592px;
   height: 800px;
-  background: url(/assets//img/dark-light.png) no-repeat;
+  background: url(./assets//img/dark-light.png) no-repeat;
   background-position: center center;
   background-size: 614px 822px;
 }
@@ -137,7 +137,7 @@
 .navigation__cart {
   width: 17px;
   height: 17px;
-  background: url(/assets/img/cart.png) no-repeat;
+  background: url(./assets/img/cart.png) no-repeat;
   background-position: center center;
   background-size: cover;
   margin-right: 51px;
@@ -283,12 +283,12 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url("/assets/fonts/Inter-Regular.ttf");
+  src: url("./assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Cardo';
-  src: url("/assets/fonts/Cardo-Regular.ttf");
+  src: url("./assets/fonts/Cardo-Regular.ttf");
 }
 
 .author-book {
@@ -313,7 +313,7 @@
 }
 
 .author-book__item:first-child > .author-book__img {
-  background: url(/assets/img/atomic-author.png) no-repeat;
+  background: url(./assets/img/atomic-author.png) no-repeat;
   background-position: center center;
 }
 
@@ -327,7 +327,7 @@
 }
 
 .author-book__item:last-child > .author-book__img {
-  background: url(/assets/img/dark-author.png) no-repeat;
+  background: url(./assets/img/dark-author.png) no-repeat;
   background-position: center center;
 }
 
@@ -537,7 +537,7 @@
 .about__barcode {
   height: 130px;
   width: 130px;
-  background: url(/assets/img/barcode.png) no-repeat;
+  background: url(./assets/img/barcode.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -587,7 +587,7 @@
 .about__img {
   height: 620px;
   width: 525px;
-  background: url("/assets/img/position-man.png") no-repeat;
+  background: url("./assets/img/position-man.png") no-repeat;
   background-position: center center;
   background-size: 565px 660px;
   position: absolute;
@@ -644,7 +644,7 @@
 }
 
 .trusted__item:first-child > .trusted__img {
-  background: url(/assets/img/trusted-amazen.png) no-repeat;
+  background: url(./assets/img/trusted-amazen.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -658,7 +658,7 @@
 }
 
 .trusted__item:nth-child(2) > .trusted__img {
-  background: url(/assets/img/trusted-megan.png) no-repeat;
+  background: url(./assets/img/trusted-megan.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -668,7 +668,7 @@
 }
 
 .trusted__item:nth-child(3) > .trusted__img {
-  background: url(/assets/img/trusted-megank.png) no-repeat;
+  background: url(./assets/img/trusted-megank.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -678,7 +678,7 @@
 }
 
 .trusted__item:last-child > .trusted__img {
-  background: url(/assets/img/trusted-urban.png) no-repeat;
+  background: url(./assets/img/trusted-urban.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -728,7 +728,7 @@
 .copy-book__img {
   height: 394px;
   width: 560px;
-  background: url(/assets/img/copy-book.png) no-repeat;
+  background: url(./assets/img/copy-book.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -881,7 +881,7 @@
 .learn__img {
   height: 632px;
   width: 535px;
-  background: url("/assets/img/position-woman.png") no-repeat;
+  background: url("./assets/img/position-woman.png") no-repeat;
   background-position: center center;
   background-size: 575px 672px;
   position: absolute;
@@ -1238,7 +1238,7 @@
 }
 
 .right-section__item:first-child > .right-section__head > .right-section__img {
-  background: url(/assets/img/James.png) no-repeat;
+  background: url(./assets/img/James.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1248,7 +1248,7 @@
 }
 
 .right-section__item:nth-child(2) > .right-section__head > .right-section__img {
-  background: url(/assets/img/Chris.png) no-repeat;
+  background: url(./assets/img/Chris.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1262,7 +1262,7 @@
 }
 
 .right-section__item:last-child > .right-section__head > .right-section__img {
-  background: url(/assets/img/Angeline.png) no-repeat;
+  background: url(./assets/img/Angeline.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1325,7 +1325,7 @@
 }
 
 .carousel__first > .carousel__img {
-  background: url(/assets/img/resource-1.png) no-repeat;
+  background: url(./assets/img/resource-1.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1339,7 +1339,7 @@
 }
 
 .carousel__second > .carousel__img {
-  background: url(/assets/img/resource-2.png) no-repeat;
+  background: url(./assets/img/resource-2.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1353,7 +1353,7 @@
 }
 
 .carousel__third > .carousel__img {
-  background: url(/assets/img/resource-3.png) no-repeat;
+  background: url(./assets/img/resource-3.png) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -1443,7 +1443,7 @@
 .button-prev__arrow {
   width: 15px;
   height: 29px;
-  background: url(/assets/img/prev.png) no-repeat;
+  background: url(./assets/img/prev.png) no-repeat;
   background-position: center center;
   background-size: 19px 33px;
 }
@@ -1471,7 +1471,7 @@
 .button-next__arrow {
   width: 15px;
   height: 29px;
-  background: url(/assets/img/next.png) no-repeat;
+  background: url(./assets/img/next.png) no-repeat;
   background-position: center center;
   background-size: 19px 33px;
 }
@@ -1599,28 +1599,28 @@
 }
 
 .footer__social-item:first-child > .social-list__link > .footer__icon {
-  background: url(/assets/img/footer-face.png) no-repeat;
+  background: url(./assets/img/footer-face.png) no-repeat;
   background-position: center center;
   height: 16px;
   width: 8.59375px;
 }
 
 .footer__social-item:nth-child(2) > .social-list__link > .footer__icon {
-  background: url(/assets/img/footer-tw.png) no-repeat;
+  background: url(./assets/img/footer-tw.png) no-repeat;
   background-position: center center;
   height: 12.96875px;
   width: 15.968799591064453px;
 }
 
 .footer__social-item:nth-child(3) > .social-list__link > .footer__icon {
-  background: url(/assets/img/footer-in.png) no-repeat;
+  background: url(./assets/img/footer-in.png) no-repeat;
   background-position: center center;
   height: 13.96875px;
   width: 14px;
 }
 
 .footer__social-item:last-child > .social-list__link > .footer__icon {
-  background: url(/assets/img/footer-inst.png) no-repeat;
+  background: url(./assets/img/footer-inst.png) no-repeat;
   background-position: center center;
   height: 16.624996185302734px;
   width: 16.6250057220459px;
